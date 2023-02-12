@@ -1,0 +1,64 @@
+hr {
+  border: none;
+  height: 1em;
+  /* Set the hr color */
+  color: green; /* old IE */
+  background-color: green; /* Modern Browsers */
+}
+
+img {
+  width: 30vh;
+  margin-bottom: 2em;
+}
+
+.main {
+  width: 70%;
+  height: 100%;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.mainTitle {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+p {
+  font-size: large;
+}
+
+.infoMain {
+  display: flex;
+  justify-content: space-around;
+}
+
+.info {
+  width: 20%;
+  text-align: center;
+  color: white;
+  background-color: green;
+  padding: 2em;
+  border-radius: 1em;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.info :hover {
+  transform: rotate(90deg);
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    width: 100%;
+    height: initial;
+    padding-bottom: 2em;
+  }
+  .infoMain {
+    display: block;
+  }
+  .info {
+    width: inherit;
+    padding: 1em 0;
+    margin: 1em;
+  }
+}
